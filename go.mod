@@ -1,4 +1,4 @@
-module github.com/lthphuw/defaults
+module github.com/lthphuw/go-defaults
 
 go 1.24.3
 
