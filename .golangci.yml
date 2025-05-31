@@ -1,0 +1,30 @@
+version: "2"
+
+run:
+  timeout: 5m
+
+linters:
+  default: none
+  enable:
+  - govet
+  - staticcheck
+  - revive
+  - unused
+  - errcheck
+  - gocritic
+  - ineffassign
+  exclusions:
+    paths:
+      - examples
+
+formatters:
+  enable:
+  - gci
+  - gofmt
+  - gofumpt
+  - goimports
+  - golines
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
